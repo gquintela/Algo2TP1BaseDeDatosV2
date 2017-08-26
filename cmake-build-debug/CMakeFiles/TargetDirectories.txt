@@ -1,0 +1,15 @@
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/install/local.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/install.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/install/strip.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/install/local.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/install.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/list_install_components.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/edit_cache.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/gtest_main.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/rebuild_cache.dir
+/home/gonzalo/CLionProjects/tp1_base/cmake-build-debug/tests/google-test/CMakeFiles/gtest.dir
