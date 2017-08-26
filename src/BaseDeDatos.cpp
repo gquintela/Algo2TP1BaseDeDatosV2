@@ -74,3 +74,4 @@ bool operator==(const BaseDeDatos &, const BaseDeDatos &) {
 bool operator!=(const BaseDeDatos &, const BaseDeDatos &) {
     return false;
 }
+//comento para probar commiteo en Clion
