@@ -278,9 +278,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/gonzalo/CLionProjects/tp1_base/tests/google-test/src/gtest_main.cc
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/google-test/src/gtest_main.cc
 stdio.h
 -
 gtest/gtest.h
-/home/gonzalo/CLionProjects/tp1_base/tests/google-test/src/gtest/gtest.h
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/google-test/src/gtest/gtest.h
 
