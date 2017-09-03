@@ -249,6 +249,54 @@ CMakeFiles/correrTests.dir/src/Tabla.cpp.o.provides: CMakeFiles/correrTests.dir/
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/Tabla.cpp.o
 
 
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/criterio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/correrTests.dir/src/criterio.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/criterio.cpp.o -c /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/criterio.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp > CMakeFiles/correrTests.dir/src/criterio.cpp.i
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/criterio.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp -o CMakeFiles/correrTests.dir/src/criterio.cpp.s
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.o.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/criterio.cpp.o.requires
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.o.provides: CMakeFiles/correrTests.dir/src/criterio.cpp.o.requires
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/criterio.cpp.o.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/criterio.cpp.o.provides
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/criterio.cpp.o
+
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/restriccion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/correrTests.dir/src/restriccion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/restriccion.cpp.o -c /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/restriccion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp > CMakeFiles/correrTests.dir/src/restriccion.cpp.i
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/restriccion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp -o CMakeFiles/correrTests.dir/src/restriccion.cpp.s
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/restriccion.cpp.o.requires
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o.provides: CMakeFiles/correrTests.dir/src/restriccion.cpp.o.requires
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/restriccion.cpp.o.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/restriccion.cpp.o.provides
+
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/restriccion.cpp.o
+
+
 # Object files for target correrTests
 correrTests_OBJECTS = \
 "CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o" \
@@ -258,7 +306,9 @@ correrTests_OBJECTS = \
 "CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o" \
 "CMakeFiles/correrTests.dir/src/Dato.cpp.o" \
 "CMakeFiles/correrTests.dir/src/Registro.cpp.o" \
-"CMakeFiles/correrTests.dir/src/Tabla.cpp.o"
+"CMakeFiles/correrTests.dir/src/Tabla.cpp.o" \
+"CMakeFiles/correrTests.dir/src/criterio.cpp.o" \
+"CMakeFiles/correrTests.dir/src/restriccion.cpp.o"
 
 # External object files for target correrTests
 correrTests_EXTERNAL_OBJECTS =
@@ -271,12 +321,14 @@ correrTests: CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o
 correrTests: CMakeFiles/correrTests.dir/src/Dato.cpp.o
 correrTests: CMakeFiles/correrTests.dir/src/Registro.cpp.o
 correrTests: CMakeFiles/correrTests.dir/src/Tabla.cpp.o
+correrTests: CMakeFiles/correrTests.dir/src/criterio.cpp.o
+correrTests: CMakeFiles/correrTests.dir/src/restriccion.cpp.o
 correrTests: CMakeFiles/correrTests.dir/build.make
 correrTests: tests/google-test/libgtest.a
 correrTests: tests/google-test/libgtest_main.a
 correrTests: tests/google-test/libgtest.a
 correrTests: CMakeFiles/correrTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable correrTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable correrTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/correrTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -292,6 +344,8 @@ CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/BaseDeDatos.
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Dato.cpp.o.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Registro.cpp.o.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Tabla.cpp.o.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/criterio.cpp.o.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/restriccion.cpp.o.requires
 
 .PHONY : CMakeFiles/correrTests.dir/requires
 

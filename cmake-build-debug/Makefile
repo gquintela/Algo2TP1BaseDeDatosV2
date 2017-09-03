@@ -303,6 +303,60 @@ src/Tabla.cpp.s:
 	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Tabla.cpp.s
 .PHONY : src/Tabla.cpp.s
 
+src/criterio.o: src/criterio.cpp.o
+
+.PHONY : src/criterio.o
+
+# target to build an object file
+src/criterio.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/criterio.cpp.o
+.PHONY : src/criterio.cpp.o
+
+src/criterio.i: src/criterio.cpp.i
+
+.PHONY : src/criterio.i
+
+# target to preprocess a source file
+src/criterio.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/criterio.cpp.i
+.PHONY : src/criterio.cpp.i
+
+src/criterio.s: src/criterio.cpp.s
+
+.PHONY : src/criterio.s
+
+# target to generate assembly for a file
+src/criterio.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/criterio.cpp.s
+.PHONY : src/criterio.cpp.s
+
+src/restriccion.o: src/restriccion.cpp.o
+
+.PHONY : src/restriccion.o
+
+# target to build an object file
+src/restriccion.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/restriccion.cpp.o
+.PHONY : src/restriccion.cpp.o
+
+src/restriccion.i: src/restriccion.cpp.i
+
+.PHONY : src/restriccion.i
+
+# target to preprocess a source file
+src/restriccion.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/restriccion.cpp.i
+.PHONY : src/restriccion.cpp.i
+
+src/restriccion.s: src/restriccion.cpp.s
+
+.PHONY : src/restriccion.s
+
+# target to generate assembly for a file
+src/restriccion.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/restriccion.cpp.s
+.PHONY : src/restriccion.cpp.s
+
 tests/baseDeDatos-test.o: tests/baseDeDatos-test.cpp.o
 
 .PHONY : tests/baseDeDatos-test.o
@@ -438,6 +492,12 @@ help:
 	@echo "... src/Tabla.o"
 	@echo "... src/Tabla.i"
 	@echo "... src/Tabla.s"
+	@echo "... src/criterio.o"
+	@echo "... src/criterio.i"
+	@echo "... src/criterio.s"
+	@echo "... src/restriccion.o"
+	@echo "... src/restriccion.i"
+	@echo "... src/restriccion.s"
 	@echo "... tests/baseDeDatos-test.o"
 	@echo "... tests/baseDeDatos-test.i"
 	@echo "... tests/baseDeDatos-test.s"

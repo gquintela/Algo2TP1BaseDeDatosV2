@@ -3,7 +3,7 @@
 //
 
 #include "BaseDeDatos.h"
-#include "utils.h"
+
 
 BaseDeDatos::BaseDeDatos(vector<string> nombresTabla, vector<Tabla> tablas) :
         _nombresTabla(nombresTabla), _tablas(tablas) {}
@@ -30,7 +30,7 @@ void BaseDeDatos::agregarRegistroATabla(string nombreTabla, Registro r) {
 }
 
 // buscar indice de tabla en base, si no esta devuelve el total de tablas
-int BaseDeDatos::indiceDeNombreEnBase(const string &nombreTabla) {
+int BaseDeDatos::indiceDeNombreEnBase(const string &nombreTabla) const {
     int i = 0;
     while (i < _nombresTabla.size() && !(nombreTabla == _nombresTabla[i])) {
         i++;
@@ -87,12 +87,28 @@ bool BaseDeDatos::sePuedeInsertarRegistro(const string &nombreTabla, const Regis
            noHayDuplicadosEnClaves(indiceTabla, r);
 }
 
-
-bool operator==(const BaseDeDatos &, const BaseDeDatos &) {
-    return false;
+vector<string> BaseDeDatos::nombresTabla() const {
+    return _nombresTabla;
 }
 
-bool operator!=(const BaseDeDatos &, const BaseDeDatos &) {
-    return false;
+vector<Tabla> BaseDeDatos::tablas() const {
+    return _tablas;
+}
+
+
+bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2) {
+    if (not seteq(b1.nombresTabla(), b2.nombresTabla())) {
+        return false;
+    }
+    for (int i = 0; i < b1.nombresTabla().size(); i++) {
+        if (b1.tablas()[i] != b2.tablas()[b2.indiceDeNombreEnBase(b1.nombresTabla()[i])]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool operator!=(const BaseDeDatos &b1, const BaseDeDatos &b2) {
+    return not(b1 == b2);
 }
 //comento para probar commiteo en Clion

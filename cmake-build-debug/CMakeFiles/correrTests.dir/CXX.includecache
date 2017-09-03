@@ -281,14 +281,14 @@ acxx_demangle.h
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.cpp
 BaseDeDatos.h
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
-utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
 vector
 -
 Tabla.h
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+utils.h
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.cpp
 Dato.h
@@ -329,6 +329,16 @@ Dato.h
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 Registro.h
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
+
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp
+restriccion.h
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+string
+-
+Dato.h
+/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 
 /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 

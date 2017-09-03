@@ -8,6 +8,7 @@
 #include<vector>
 //#include<iostream>
 #include "Tabla.h"
+#include "utils.h"
 
 
 using namespace std;
@@ -26,7 +27,16 @@ public:
     void agregarRegistroATabla(string nombreTabla, Registro r);
 
     // @observador
+    vector<string> nombresTabla() const;
+
+    // @observador
+    vector<Tabla> tablas() const;
+
+    // @observador
     bool sePuedeInsertarRegistro(const string &nombreTabla, const Registro &r);
+
+    // @otras operaciones
+    int indiceDeNombreEnBase(const string &nombreTabla) const;
 
     // @observador
 //    Tabla busqueda(string campo) const;
@@ -40,7 +50,7 @@ private:
     Tabla _t;
     Registro _r;*/
 
- int indiceDeNombreEnBase(const string &nombreTabla);
+
 
     bool mismosCampos(const int &indiceTabla, const Registro &r);
 
@@ -49,8 +59,9 @@ private:
     bool noHayDuplicadosEnClaves(const int &indiceTabla, const Registro &r);
 };
 
-bool operator==(const BaseDeDatos&, const BaseDeDatos&);
-bool operator!=(const BaseDeDatos&, const BaseDeDatos&);
+bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2);
+
+bool operator!=(const BaseDeDatos &b1, const BaseDeDatos &b2);
 
 
 #endif //TP1_BASEDEDATOS_H
