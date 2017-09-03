@@ -16,7 +16,7 @@ add_subdirectory(tests/google-test)
 
 
 # Creamos el ejecutable para correr los tests
-add_executable(correrTests ${TEST_SOURCES} ${SOURCE_FILES} src/BaseDeDatos.cpp src/BaseDeDatos.h tests/baseDeDatos-test.cpp)
+add_executable(correrTests ${TEST_SOURCES} ${SOURCE_FILES} src/BaseDeDatos.cpp src/BaseDeDatos.h tests/baseDeDatos-test.cpp src/restriccion.cpp src/restriccion.h src/criterio.cpp src/criterio.h)
 
 # Necesitamos asociar los archivos del framework de testing
 target_link_libraries(correrTests gtest gtest_main)

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/correrTests.dir/src/Dato.cpp.o"
   "CMakeFiles/correrTests.dir/src/Registro.cpp.o"
   "CMakeFiles/correrTests.dir/src/Tabla.cpp.o"
+  "CMakeFiles/correrTests.dir/src/criterio.cpp.o"
+  "CMakeFiles/correrTests.dir/src/restriccion.cpp.o"
   "correrTests.pdb"
   "correrTests"
 )

@@ -22,6 +22,10 @@ CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/Tabla.cpp
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/Tabla.h
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/utils.h
 
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/Dato.h
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/restriccion.cpp
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/restriccion.h
+
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../tests/google-test/include/gtest/gtest-death-test.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../tests/google-test/include/gtest/gtest-message.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../tests/google-test/include/gtest/gtest-param-test.h

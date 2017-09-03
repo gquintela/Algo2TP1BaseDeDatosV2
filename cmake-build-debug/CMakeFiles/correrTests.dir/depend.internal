@@ -22,6 +22,10 @@ CMakeFiles/correrTests.dir/src/Tabla.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.cpp
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+CMakeFiles/correrTests.dir/src/restriccion.cpp.o
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o
  ../tests/google-test/include/gtest/gtest-death-test.h
  ../tests/google-test/include/gtest/gtest-message.h

@@ -250,6 +250,18 @@
 		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h">
 			<Option target="correrTests"/>
 		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp">
+			<Option target="correrTests"/>
+		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h">
+			<Option target="correrTests"/>
+		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp">
+			<Option target="correrTests"/>
+		</Unit>
+		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h">
+			<Option target="correrTests"/>
+		</Unit>
 		<Unit filename="/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h">
 			<Option target="correrTests"/>
 		</Unit>
