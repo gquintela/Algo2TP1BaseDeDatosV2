@@ -95,6 +95,36 @@ vector<Tabla> BaseDeDatos::tablas() const {
     return _tablas;
 }
 
+bool BaseDeDatos::esCriterioValido(string &nombreTabla, Criterio &c) {
+
+    int indiceTabla = indiceDeNombreEnBase(nombreTabla);
+
+    for (int i = 0; i < c.restricciones().size(); i++) {
+        for (int j = 0; j < _tablas[indiceTabla].campos().size(); j++) {
+            bool perteneceCampo = false;
+            if (c.restricciones()[i].campo() == _tablas[indiceTabla].campos()[j]) {
+                perteneceCampo = true;
+                if (c.restricciones()[i].valor().esNat() !=
+                    _tablas[indiceTabla].tipoCampo(c.restricciones()[i].campo()).esNat()) {
+                    return false;
+                }
+            }
+            if (not perteneceCampo) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+
+Tabla BaseDeDatos::busqueda(string &nombreTabla, Criterio &c) const {
+
+    int indiceTabla = indiceDeNombreEnBase(nombreTabla);
+
+    Tabla resultado(_tablas[indiceTabla].campos(), _tablas[indiceTabla].claves());
+}
+
 
 bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2) {
     if (not seteq(b1.nombresTabla(), b2.nombresTabla())) {

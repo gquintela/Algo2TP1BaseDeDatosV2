@@ -2,6 +2,7 @@
 // Created by gonzalo on 3/09/17.
 //
 
+#include <vector>
 #include "restriccion.h"
 
 Restriccion::Restriccion(string campo, Dato valor, bool coincidencia) :
@@ -28,3 +29,6 @@ bool operator==(const Restriccion &res1, const Restriccion &res2) {
 bool operator!=(const Restriccion &res1, const Restriccion &res2) {
     return not(res1 == res2);
 }
+
+
+

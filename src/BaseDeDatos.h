@@ -9,6 +9,7 @@
 //#include<iostream>
 #include "Tabla.h"
 #include "utils.h"
+#include "criterio.h"
 
 
 using namespace std;
@@ -38,8 +39,14 @@ public:
     // @otras operaciones
     int indiceDeNombreEnBase(const string &nombreTabla) const;
 
+
+    bool esCriterioValido(string &nombreTabla, Criterio &c);
+
+
+//    vector<Dato>
+
     // @observador
-//    Tabla busqueda(string campo) const;
+    Tabla busqueda(string &nombreTabla, Criterio &c) const;
 
 
 private:
