@@ -29,43 +29,64 @@ void BaseDeDatos::agregarRegistroATabla(string nombreTabla, Registro r) {
     }
 }
 
-bool BaseDeDatos::sePuedeInsertarRegistro(string nombreTabla, Registro r) {
-    // ver que nombreTabla este en _nombresTabla
+// buscar indice de tabla en base, si no esta devuelve el total de tablas
+int BaseDeDatos::indiceDeNombreEnBase(const string &nombreTabla) {
     int i = 0;
     while (i < _nombresTabla.size() && !(nombreTabla == _nombresTabla[i])) {
         i++;
     }
-    if (i == _nombresTabla.size() ){
-        return false;
-    }
-    // ver que los campos de nombreTabla sean los mismos de r
-    if (! seteq(_tablas[i].campos(),r.campos())) {
-        return false;
-    }
-    //chequear que para cada campo, el tipo de dato sea el mismo
-    for(int j = 0; j < _tablas[i].campos().size();j++){
+    return i;
+}
 
-        if (_tablas[i].tipoCampo(_tablas[i].campos()[j]).esNat() != r.dato(_tablas[i].campos()[j]).esNat()) {
+// ver que los campos de nombreTabla sean los mismos de r
+bool BaseDeDatos::mismosCampos(const int &indiceTabla, const Registro &r) {
+    return seteq(_tablas[indiceTabla].campos(), r.campos());
+}
+
+//chequear que para cada campo, el tipo de dato sea el mismo
+bool BaseDeDatos::mismosTiposEnCampos(const int &indiceTabla, const Registro &r) {
+
+    for (int j = 0; j < _tablas[indiceTabla].campos().size(); j++) {
+
+        if (_tablas[indiceTabla].tipoCampo(_tablas[indiceTabla].campos()[j]).esNat() !=
+            r.dato(_tablas[indiceTabla].campos()[j]).esNat()) {
             return false;
         }
     }
+    return true;
+}
 
-    // ver que de las claves de nombreTabla los valores de r no sean todos iguales a alguno de nombreTabla
-
-    for(int j = 0; j < _tablas[i].registros().size();j++) {
+// ver que de las claves de nombreTabla los valores de r no sean todos iguales a alguno de nombreTabla
+bool BaseDeDatos::noHayDuplicadosEnClaves(const int &indiceTabla, const Registro &r) {
+    for (int j = 0; j < _tablas[indiceTabla].registros().size(); j++) {
         bool esDuplicado = true;
-        for(int k = 0; k < _tablas[i].claves().size();k++) {
-            if (_tablas[i].registros()[j].dato(_tablas[i].claves()[k]) != r.dato(_tablas[i].claves()[k])) {
+        for (int k = 0; k < _tablas[indiceTabla].claves().size(); k++) {
+            if (_tablas[indiceTabla].registros()[j].dato(_tablas[indiceTabla].claves()[k]) !=
+                r.dato(_tablas[indiceTabla].claves()[k])) {
                 esDuplicado = false;
             }
         }
-        if (esDuplicado){
+        if (esDuplicado) {
             return false;
         }
     }
-
-    return false;
+    return true;
 }
+
+
+bool BaseDeDatos::sePuedeInsertarRegistro(const string &nombreTabla, const Registro &r) {
+
+
+    int indiceTabla = indiceDeNombreEnBase(nombreTabla);
+
+    if (indiceTabla == _nombresTabla.size()) {
+        return false;
+    }
+
+    return (mismosCampos(indiceTabla, r)) and mismosTiposEnCampos(indiceTabla, r) and
+           noHayDuplicadosEnClaves(indiceTabla, r);
+}
+
 
 bool operator==(const BaseDeDatos &, const BaseDeDatos &) {
     return false;

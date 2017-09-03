@@ -26,7 +26,7 @@ public:
     void agregarRegistroATabla(string nombreTabla, Registro r);
 
     // @observador
-    bool  sePuedeInsertarRegistro(string nombreTabla, Registro r );
+    bool sePuedeInsertarRegistro(const string &nombreTabla, const Registro &r);
 
     // @observador
 //    Tabla busqueda(string campo) const;
@@ -39,6 +39,14 @@ private:
  /*   string _nombreTabla;
     Tabla _t;
     Registro _r;*/
+
+ int indiceDeNombreEnBase(const string &nombreTabla);
+
+    bool mismosCampos(const int &indiceTabla, const Registro &r);
+
+    bool mismosTiposEnCampos(const int &indiceTabla, const Registro &r);
+
+    bool noHayDuplicadosEnClaves(const int &indiceTabla, const Registro &r);
 };
 
 bool operator==(const BaseDeDatos&, const BaseDeDatos&);
