@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o"
+  "CMakeFiles/correrTests.dir/tests/criterio_test.cpp.o"
   "CMakeFiles/correrTests.dir/tests/dato_test.cpp.o"
   "CMakeFiles/correrTests.dir/tests/registro_test.cpp.o"
+  "CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.o"
   "CMakeFiles/correrTests.dir/tests/tabla_test.cpp.o"
   "CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o"
   "CMakeFiles/correrTests.dir/src/Dato.cpp.o"

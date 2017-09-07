@@ -40,17 +40,10 @@ public:
     // @otras operaciones
     int indiceDeNombreEnBase(const string &nombreTabla) const;
 
-
-    bool esCriterioValido(string &nombreTabla, Criterio &c);
-
-
-//    vector<Dato>
-
     // @observador
-    Tabla busqueda(string &nombreTabla, Criterio &c);
+    Tabla busqueda(string nombreTabla, Criterio c);
 
-    void agregarACriteriosUsados(Criterio &c);
-
+    // @otras operaciones
     Criterio criterioMasUsado();
 
 private:
@@ -64,6 +57,7 @@ private:
     Registro _r;*/
 
 
+ bool esCriterioValido(string &nombreTabla, Criterio &c);
 
     bool mismosCampos(const int &indiceTabla, const Registro &r);
 
@@ -72,6 +66,8 @@ private:
     bool noHayDuplicadosEnClaves(const int &indiceTabla, const Registro &r);
 
     bool registroPasaFiltroCriterio(Registro &r, Criterio &c);
+
+    void agregarACriteriosUsados(Criterio &c);
 };
 
 bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2);

@@ -151,7 +151,7 @@ bool BaseDeDatos::registroPasaFiltroCriterio(Registro &r, Criterio &crit) {
 }
 
 
-Tabla BaseDeDatos::busqueda(string &nombreTabla, Criterio &c) {
+Tabla BaseDeDatos::busqueda(string nombreTabla, Criterio c) {
     agregarACriteriosUsados(c);
     int indiceTabla = indiceDeNombreEnBase(nombreTabla);
     vector<Dato> tipoDeCampos;

@@ -384,6 +384,33 @@ tests/baseDeDatos-test.cpp.s:
 	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.s
 .PHONY : tests/baseDeDatos-test.cpp.s
 
+tests/criterio_test.o: tests/criterio_test.cpp.o
+
+.PHONY : tests/criterio_test.o
+
+# target to build an object file
+tests/criterio_test.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/criterio_test.cpp.o
+.PHONY : tests/criterio_test.cpp.o
+
+tests/criterio_test.i: tests/criterio_test.cpp.i
+
+.PHONY : tests/criterio_test.i
+
+# target to preprocess a source file
+tests/criterio_test.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/criterio_test.cpp.i
+.PHONY : tests/criterio_test.cpp.i
+
+tests/criterio_test.s: tests/criterio_test.cpp.s
+
+.PHONY : tests/criterio_test.s
+
+# target to generate assembly for a file
+tests/criterio_test.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/criterio_test.cpp.s
+.PHONY : tests/criterio_test.cpp.s
+
 tests/dato_test.o: tests/dato_test.cpp.o
 
 .PHONY : tests/dato_test.o
@@ -437,6 +464,33 @@ tests/registro_test.s: tests/registro_test.cpp.s
 tests/registro_test.cpp.s:
 	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/registro_test.cpp.s
 .PHONY : tests/registro_test.cpp.s
+
+tests/restriccion_test.o: tests/restriccion_test.cpp.o
+
+.PHONY : tests/restriccion_test.o
+
+# target to build an object file
+tests/restriccion_test.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.o
+.PHONY : tests/restriccion_test.cpp.o
+
+tests/restriccion_test.i: tests/restriccion_test.cpp.i
+
+.PHONY : tests/restriccion_test.i
+
+# target to preprocess a source file
+tests/restriccion_test.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.i
+.PHONY : tests/restriccion_test.cpp.i
+
+tests/restriccion_test.s: tests/restriccion_test.cpp.s
+
+.PHONY : tests/restriccion_test.s
+
+# target to generate assembly for a file
+tests/restriccion_test.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.s
+.PHONY : tests/restriccion_test.cpp.s
 
 tests/tabla_test.o: tests/tabla_test.cpp.o
 
@@ -501,12 +555,18 @@ help:
 	@echo "... tests/baseDeDatos-test.o"
 	@echo "... tests/baseDeDatos-test.i"
 	@echo "... tests/baseDeDatos-test.s"
+	@echo "... tests/criterio_test.o"
+	@echo "... tests/criterio_test.i"
+	@echo "... tests/criterio_test.s"
 	@echo "... tests/dato_test.o"
 	@echo "... tests/dato_test.i"
 	@echo "... tests/dato_test.s"
 	@echo "... tests/registro_test.o"
 	@echo "... tests/registro_test.i"
 	@echo "... tests/registro_test.s"
+	@echo "... tests/restriccion_test.o"
+	@echo "... tests/restriccion_test.i"
+	@echo "... tests/restriccion_test.s"
 	@echo "... tests/tabla_test.o"
 	@echo "... tests/tabla_test.i"
 	@echo "... tests/tabla_test.s"

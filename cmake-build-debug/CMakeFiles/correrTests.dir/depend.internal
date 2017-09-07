@@ -65,6 +65,33 @@ CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/baseDeDatos-test.cpp
+CMakeFiles/correrTests.dir/tests/criterio_test.cpp.o
+ ../tests/google-test/include/gtest/gtest-death-test.h
+ ../tests/google-test/include/gtest/gtest-message.h
+ ../tests/google-test/include/gtest/gtest-param-test.h
+ ../tests/google-test/include/gtest/gtest-printers.h
+ ../tests/google-test/include/gtest/gtest-test-part.h
+ ../tests/google-test/include/gtest/gtest-typed-test.h
+ ../tests/google-test/include/gtest/gtest.h
+ ../tests/google-test/include/gtest/gtest_pred_impl.h
+ ../tests/google-test/include/gtest/gtest_prod.h
+ ../tests/google-test/include/gtest/internal/custom/gtest-port.h
+ ../tests/google-test/include/gtest/internal/custom/gtest-printers.h
+ ../tests/google-test/include/gtest/internal/gtest-death-test-internal.h
+ ../tests/google-test/include/gtest/internal/gtest-filepath.h
+ ../tests/google-test/include/gtest/internal/gtest-internal.h
+ ../tests/google-test/include/gtest/internal/gtest-linked_ptr.h
+ ../tests/google-test/include/gtest/internal/gtest-param-util-generated.h
+ ../tests/google-test/include/gtest/internal/gtest-param-util.h
+ ../tests/google-test/include/gtest/internal/gtest-port-arch.h
+ ../tests/google-test/include/gtest/internal/gtest-port.h
+ ../tests/google-test/include/gtest/internal/gtest-string.h
+ ../tests/google-test/include/gtest/internal/gtest-tuple.h
+ ../tests/google-test/include/gtest/internal/gtest-type-util.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/criterio_test.cpp
 CMakeFiles/correrTests.dir/tests/dato_test.cpp.o
  ../tests/google-test/include/gtest/gtest-death-test.h
  ../tests/google-test/include/gtest/gtest-message.h
@@ -116,6 +143,32 @@ CMakeFiles/correrTests.dir/tests/registro_test.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/registro_test.cpp
+CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.o
+ ../tests/google-test/include/gtest/gtest-death-test.h
+ ../tests/google-test/include/gtest/gtest-message.h
+ ../tests/google-test/include/gtest/gtest-param-test.h
+ ../tests/google-test/include/gtest/gtest-printers.h
+ ../tests/google-test/include/gtest/gtest-test-part.h
+ ../tests/google-test/include/gtest/gtest-typed-test.h
+ ../tests/google-test/include/gtest/gtest.h
+ ../tests/google-test/include/gtest/gtest_pred_impl.h
+ ../tests/google-test/include/gtest/gtest_prod.h
+ ../tests/google-test/include/gtest/internal/custom/gtest-port.h
+ ../tests/google-test/include/gtest/internal/custom/gtest-printers.h
+ ../tests/google-test/include/gtest/internal/gtest-death-test-internal.h
+ ../tests/google-test/include/gtest/internal/gtest-filepath.h
+ ../tests/google-test/include/gtest/internal/gtest-internal.h
+ ../tests/google-test/include/gtest/internal/gtest-linked_ptr.h
+ ../tests/google-test/include/gtest/internal/gtest-param-util-generated.h
+ ../tests/google-test/include/gtest/internal/gtest-param-util.h
+ ../tests/google-test/include/gtest/internal/gtest-port-arch.h
+ ../tests/google-test/include/gtest/internal/gtest-port.h
+ ../tests/google-test/include/gtest/internal/gtest-string.h
+ ../tests/google-test/include/gtest/internal/gtest-tuple.h
+ ../tests/google-test/include/gtest/internal/gtest-type-util.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/restriccion_test.cpp
 CMakeFiles/correrTests.dir/tests/tabla_test.cpp.o
  ../tests/google-test/include/gtest/gtest-death-test.h
  ../tests/google-test/include/gtest/gtest-message.h

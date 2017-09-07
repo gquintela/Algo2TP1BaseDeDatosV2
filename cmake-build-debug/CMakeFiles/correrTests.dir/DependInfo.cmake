@@ -11,8 +11,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/src/criterio.cpp.o"
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/src/restriccion.cpp.o"
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/baseDeDatos-test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o"
+  "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/criterio_test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/criterio_test.cpp.o"
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/dato_test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/dato_test.cpp.o"
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/registro_test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/registro_test.cpp.o"
+  "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/restriccion_test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/restriccion_test.cpp.o"
   "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/tabla_test.cpp" "/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/tabla_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

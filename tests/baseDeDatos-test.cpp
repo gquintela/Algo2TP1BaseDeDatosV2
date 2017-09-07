@@ -8,119 +8,86 @@
 
 using namespace std;
 
-class TablaTests : public ::testing::Test {
+class BaseDeDatosTests : public ::testing::Test {
 
 protected:
-    TablaTests() : t({"LU", "Año", "Nombre", "Carrera"},
-                     { "LU", "Año" },
-                     { datoNat(0), datoNat(0), datoStr(""), datoStr("")}),
-                   t2({"Cod", "Carrera"},
-                      {"Cod"},
-                      {datoNat(0), datoStr("")}) {};
+    BaseDeDatosTests() :
+            r({"LU", "Año", "Nombre", "Carrera"},
+              {datoNat(182), datoNat(18), datoStr("March"), datoStr("Computacion")}),
 
-    Tabla t;
+            t1({"LU", "Año", "Nombre", "Carrera"},
+               {"LU", "Año"},
+               {datoNat(0), datoNat(0), datoStr(""), datoStr("")}),
+            t2({"Cod", "Carrera"},
+               {"Cod"},
+               {datoNat(0), datoStr("")}),
+            b0({}, {}),
+            b1({"tabla01"}, {t1}),
+            b2({"tabla02"}, {t2}),
+            b3({"tabla01", "tabla02"}, {t1, t2}) {};
+
+
+    Registro r;
+    Tabla t1;
     Tabla t2;
-
+    BaseDeDatos b0;
+    BaseDeDatos b1;
+    BaseDeDatos b2;
+    BaseDeDatos b3;
 };
 
-/*
-TEST(tabla_test, crear) {
-    Tabla t({ "LU", "Año", "Nombre", "Carrera" },
-            {"LU", "Año"},
-            {datoNat(0), datoNat(0), datoStr(""), datoStr("")});
-    Tabla t2({ "Cod", "Carrera" },
-             {"Cod"},
-             {datoNat(0), datoStr("")});
-};
+TEST_F(BaseDeDatosTests, agregarTabla) {
+    b0.agregarTabla("tabla01", t1);
+    EXPECT_EQ(b0, b1);
+    b0.agregarTabla("tabla02", t2);
+    EXPECT_EQ(b0, b3);
 
-TEST_F(TablaTests, campos) {
-    EXPECT_EQ(t.campos(), vector<string>({"LU", "Año", "Nombre", "Carrera"}));
-    EXPECT_EQ(t2.campos(), vector<string>({"Cod", "Carrera"}));
-};
-
-TEST_F(TablaTests, claves) {
-    EXPECT_EQ(t.claves(), vector<string>({"LU", "Año"}));
-    EXPECT_EQ(t2.claves(), vector<string>({"Cod"}));
 }
 
-TEST_F(TablaTests, tipoCampo) {
-    EXPECT_EQ(t.tipoCampo("LU").esNat(), true);
-    EXPECT_EQ(t.tipoCampo("LU").esString(), false);
-    EXPECT_EQ(t.tipoCampo("Nombre").esNat(), false);
-    EXPECT_EQ(t.tipoCampo("Nombre").esString(), true);
+TEST_F(BaseDeDatosTests, agregarRegistroATabla) {
+    b3.agregarRegistroATabla("tabla01", r);
+    EXPECT_EQ(b3.tablas()[0].registros().size(), 1);
+
 }
 
-TEST_F(TablaTests, registros) {
-    Tabla t3({}, {}, {});
-    EXPECT_EQ(t3.registros().size(), 0);
+TEST_F(BaseDeDatosTests, sePuedeInsertarRegistro) {
+    Registro r0({"Año", "Nombre", "Carrera"},
+                {datoNat(18), datoStr("March"), datoStr("Computacion")});
+    Registro r1({"LU", "Año", "Nombre", "Carrera"},
+                {datoNat(182), datoStr("dieciocho"), datoStr("March"), datoStr("Computacion")});
+    Registro r2({"LU", "Año", "Nombre", "Carrera"},
+                {datoNat(182), datoNat(18), datoStr("Ivan"), datoStr("Abogacia")});
 
-    vector<string> campos = {"LU", "Año", "Nombre", "Carrera"};
-    Registro r1(campos, {datoNat(181), datoNat(2017), datoStr("March"), datoStr("Comp")});
-    Registro r2(campos, {datoNat(182), datoNat(2015), datoStr("Ariana"), datoStr("Mate")});
-    Registro r3(campos, {datoNat(12), datoNat(2005), datoStr("Juan"), datoStr("Biol")});
-
-    EXPECT_EQ(t.registros().size(), 0);
-    t.agregarRegistro(r1);
-    EXPECT_EQ(t.registros().size(), 1);
-    EXPECT_EQ(t.registros().front(), r1);
-    t.agregarRegistro(r2);
-    EXPECT_EQ(t.registros().size(), 2);
-    EXPECT_TRUE(pertenece(r1, t.registros()));
-    EXPECT_TRUE(pertenece(r2, t.registros()));
-    EXPECT_FALSE(pertenece(r3, t.registros()));
-    t.agregarRegistro(r3);
-    EXPECT_EQ(t.registros().size(), 3);
-    EXPECT_TRUE(pertenece(r1, t.registros()));
-    EXPECT_TRUE(pertenece(r2, t.registros()));
-    EXPECT_TRUE(pertenece(r3, t.registros()));
+    EXPECT_FALSE(b3.sePuedeInsertarRegistro("tabla01", r0));
+    EXPECT_FALSE(b3.sePuedeInsertarRegistro("tabla01", r1));
+    EXPECT_TRUE(b3.sePuedeInsertarRegistro("tabla01", r));
+    b3.agregarRegistroATabla("tabla01", r);
+    EXPECT_EQ(b3.tablas()[0].registros().size(), 1);
+    EXPECT_FALSE(b3.sePuedeInsertarRegistro("tabla01", r2));
+    b3.agregarRegistroATabla("tabla01", r); //inserto registro con mismos valores en campos clave
+    EXPECT_EQ(b3.tablas()[0].registros().size(), 1);
 }
 
-TEST_F(TablaTests, igobs) {
-    Tabla t1({"LU"}, {"LU"}, {datoStr("")});
-    Tabla t2({"LU"}, {"LU"}, {datoStr("")});
-    EXPECT_EQ(t1, t2); // Claves == campos
-
-    t1 = Tabla({"LU", "Nombre"}, {"LU"}, {datoStr(""), datoStr("")});
-    t2 = Tabla({"LU", "Nombre"}, {"LU"}, {datoStr(""), datoStr("")});
-    EXPECT_EQ(t1, t2); // Claves != campos
-
-    t2 = Tabla({"LU", "Nombre"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    EXPECT_NE(t1, t2); // Cambio clave
-
-    t1 = Tabla({"Nombre", "LU"}, {"LU"}, {datoStr(""), datoStr("")});
-    t2 = Tabla({"LU", "Nombre"}, {"LU"}, {datoStr(""), datoStr("")});
-    EXPECT_EQ(t1, t2); //  Campos distinto roden
-
-    t1 = Tabla({"Nombre", "LU"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    t2 = Tabla({"LU", "Nombre"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    EXPECT_EQ(t1, t2); //  Campos distinto orden + otra clave
-
-    t1 = Tabla({"Nombre", "LU"}, {"Nombre"}, {datoStr(""), datoNat(0)});
-    t2 = Tabla({"LU", "Nombre"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    EXPECT_NE(t1, t2); //  Campos distinto orden + distinto tipo no clave
-
-    t1 = Tabla({"Nombre", "LU"}, {"LU"}, {datoStr(""), datoNat(0)});
-    t2 = Tabla({"LU", "Nombre"}, {"LU"}, {datoStr(""), datoStr("")});
-    EXPECT_NE(t1, t2); //  Campos distinto orden + distinto tipo clave
-
-    t1 = Tabla({"Nombre", "LU"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    t2 = Tabla({"LU", "Nombre"}, {"Nombre"}, {datoStr(""), datoStr("")});
-    t1.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("March"), datoStr("64/9")}));
-    EXPECT_NE(t1, t2); // Distintos registros
-
-    t2.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("March"), datoStr("64/9")}));
-    EXPECT_EQ(t1, t2); // Igualo registros
-
-    t1.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("Gerva"), datoStr("65/9")}));
-    EXPECT_NE(t1, t2); // Distintos registros
-
-    t2.agregarRegistro(Registro({"LU", "Nombre"}, {datoStr("65/9"), datoStr("Gerva")}));
-    EXPECT_EQ(t1, t2); // Igualo registros pero con campos al reves
-
-    t1.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("Ana"), datoStr("100/10")}));
-    t1.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("Luis"), datoStr("101/10")}));
-    t2.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("Luis"), datoStr("101/10")}));
-    t2.agregarRegistro(Registro({"Nombre", "LU"}, {datoStr("Ana"), datoStr("100/10")}));
-    EXPECT_EQ(t1, t2); // Agrego registros en otro orden
+TEST_F(BaseDeDatosTests, nombresTablas) {
+    vector<string> v = {"tabla01", "tabla02"};
+    EXPECT_EQ(b3.nombresTabla(), v);
 }
-*/
+
+TEST_F(BaseDeDatosTests, tablas) {
+    vector<Tabla> v = {t1, t2};
+    EXPECT_EQ(b3.tablas(), v);
+}
+
+TEST_F(BaseDeDatosTests, busqueda) {
+    Registro r0({"LU", "Año", "Nombre", "Carrera"},
+                {datoNat(182), datoNat(18), datoStr("March"), datoStr("Computacion")});
+    b3.agregarRegistroATabla("tabla01", r0);
+    Criterio c({Restriccion("LU", datoNat(182), true)});
+    Criterio c2({Restriccion("LU", datoNat(182), false)});
+    Tabla t3 = b3.busqueda("tabla01", c2);
+    EXPECT_EQ(t3, t1);
+    Tabla t4 = b3.busqueda("tabla01", c);
+    t1.agregarRegistro(r0);
+    EXPECT_EQ(t4, t1);
+
+}
