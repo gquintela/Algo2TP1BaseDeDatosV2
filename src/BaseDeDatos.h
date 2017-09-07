@@ -10,6 +10,7 @@
 #include "Tabla.h"
 #include "utils.h"
 #include "criterio.h"
+#include <utility>
 
 
 using namespace std;
@@ -46,13 +47,18 @@ public:
 //    vector<Dato>
 
     // @observador
-    Tabla busqueda(string &nombreTabla, Criterio &c) const;
+    Tabla busqueda(string &nombreTabla, Criterio &c);
 
+    void agregarACriteriosUsados(Criterio &c);
+
+    Criterio criterioMasUsado();
 
 private:
 
     vector<string> _nombresTabla;
     vector<Tabla> _tablas;
+    vector<pair<Criterio, int> > _criteriosUsados;
+
  /*   string _nombreTabla;
     Tabla _t;
     Registro _r;*/
@@ -64,6 +70,8 @@ private:
     bool mismosTiposEnCampos(const int &indiceTabla, const Registro &r);
 
     bool noHayDuplicadosEnClaves(const int &indiceTabla, const Registro &r);
+
+    bool registroPasaFiltroCriterio(Registro &r, Criterio &c);
 };
 
 bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2);

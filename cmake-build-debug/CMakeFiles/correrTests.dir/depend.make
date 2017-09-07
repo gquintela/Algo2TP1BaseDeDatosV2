@@ -6,6 +6,8 @@ CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/BaseDeDatos.h
 CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/Dato.h
 CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/Registro.h
 CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/Tabla.h
+CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/criterio.h
+CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/restriccion.h
 CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o: ../src/utils.h
 
 CMakeFiles/correrTests.dir/src/Dato.cpp.o: ../src/Dato.cpp
@@ -21,6 +23,12 @@ CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/Registro.h
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/Tabla.cpp
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/Tabla.h
 CMakeFiles/correrTests.dir/src/Tabla.cpp.o: ../src/utils.h
+
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/Dato.h
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/criterio.cpp
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/criterio.h
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/restriccion.h
+CMakeFiles/correrTests.dir/src/criterio.cpp.o: ../src/utils.h
 
 CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/Dato.h
 CMakeFiles/correrTests.dir/src/restriccion.cpp.o: ../src/restriccion.cpp
@@ -52,6 +60,8 @@ CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/BaseDeDatos.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/Dato.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/Registro.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/Tabla.h
+CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/criterio.h
+CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/restriccion.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../src/utils.h
 CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o: ../tests/baseDeDatos-test.cpp
 

@@ -118,11 +118,69 @@ bool BaseDeDatos::esCriterioValido(string &nombreTabla, Criterio &c) {
 }
 
 
-Tabla BaseDeDatos::busqueda(string &nombreTabla, Criterio &c) const {
+void BaseDeDatos::agregarACriteriosUsados(Criterio &c) {
+    bool criterioYaUsado = false;
+    for (int i = 0; i < _criteriosUsados.size(); i++) {
+        if (c == _criteriosUsados[i].first) {
+            _criteriosUsados[i].second++;
+            criterioYaUsado = true;
+        }
+    }
+    if (not criterioYaUsado) {
+        pair<Criterio, int> elementoAagregar = make_pair(c, 1);
+        _criteriosUsados.push_back(elementoAagregar);
+    }
+}
 
+bool BaseDeDatos::registroPasaFiltroCriterio(Registro &r, Criterio &crit) {
+    bool pasaFiltro = true;
+    for (int i = 0; i < crit.restricciones().size(); i++) {
+        for (int j = 0; j < r.campos().size(); j++) {
+            if (r.campos()[j] == crit.restricciones()[i].campo()) {
+                if (crit.restricciones()[i].coincidencia() and
+                    crit.restricciones()[i].valor() != r.dato(r.campos()[j])) {
+                    pasaFiltro = false;
+                } else if (not crit.restricciones()[i].coincidencia() and
+                           crit.restricciones()[i].valor() == r.dato(r.campos()[j])) {
+                    pasaFiltro = false;
+                }
+            }
+        }
+    }
+    return pasaFiltro;
+}
+
+
+Tabla BaseDeDatos::busqueda(string &nombreTabla, Criterio &c) {
+    agregarACriteriosUsados(c);
     int indiceTabla = indiceDeNombreEnBase(nombreTabla);
+    vector<Dato> tipoDeCampos;
 
-    Tabla resultado(_tablas[indiceTabla].campos(), _tablas[indiceTabla].claves());
+    for (int i = 0; i < _tablas[indiceTabla].campos().size(); i++) {
+        tipoDeCampos.push_back(_tablas[indiceTabla].tipoCampo(_tablas[indiceTabla].campos()[i]));
+    }
+
+    Tabla resultado(_tablas[indiceTabla].campos(), _tablas[indiceTabla].claves(), tipoDeCampos);
+
+    for (int i = 0; i < _tablas[indiceTabla].registros().size(); i++) {
+        if (registroPasaFiltroCriterio(_tablas[indiceTabla].registros()[i], c)) {
+            resultado.agregarRegistro(_tablas[indiceTabla].registros()[i]);
+        }
+    }
+    return resultado;
+}
+
+Criterio BaseDeDatos::criterioMasUsado() {
+    Criterio resultado = {{}};
+    int maxCantidadUsado = 0;
+    for (int i = 0; i < _criteriosUsados.size(); i++) {
+        if (_criteriosUsados[i].second > maxCantidadUsado) {
+            maxCantidadUsado = _criteriosUsados[i].second;
+            resultado = _criteriosUsados[i].first;
+        }
+    }
+
+    return resultado;
 }
 
 

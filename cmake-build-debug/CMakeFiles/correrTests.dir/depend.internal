@@ -7,6 +7,8 @@ CMakeFiles/correrTests.dir/src/BaseDeDatos.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 CMakeFiles/correrTests.dir/src/Dato.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.cpp
@@ -21,6 +23,12 @@ CMakeFiles/correrTests.dir/src/Tabla.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.cpp
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+CMakeFiles/correrTests.dir/src/criterio.cpp.o
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 CMakeFiles/correrTests.dir/src/restriccion.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
@@ -53,6 +61,8 @@ CMakeFiles/correrTests.dir/tests/baseDeDatos-test.cpp.o
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+ /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
  /home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/baseDeDatos-test.cpp
 CMakeFiles/correrTests.dir/tests/dato_test.cpp.o
