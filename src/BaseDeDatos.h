@@ -6,12 +6,10 @@
 #define TP1_BASEDEDATOS_H
 
 #include<vector>
-//#include<iostream>
 #include "Tabla.h"
 #include "utils.h"
 #include "criterio.h"
 #include <utility>
-
 
 using namespace std;
 
@@ -20,10 +18,10 @@ class BaseDeDatos {
 public:
 
     // @generador
-    BaseDeDatos(vector <string> nombresTabla, vector<Tabla> tablas );
+    BaseDeDatos(vector<string> nombresTabla, vector<Tabla> tablas);
 
     // @generador
-    void agregarTabla(string nombreTabla,Tabla t);
+    void agregarTabla(string nombreTabla, Tabla t);
 
     // @generador
     void agregarRegistroATabla(string nombreTabla, Registro r);
@@ -34,13 +32,13 @@ public:
     // @observador
     vector<Tabla> tablas() const;
 
-    // @observador
+    // @otras operaciones
     bool sePuedeInsertarRegistro(const string &nombreTabla, const Registro &r);
 
     // @otras operaciones
     int indiceDeNombreEnBase(const string &nombreTabla) const;
 
-    // @observador
+    // @otras operaciones
     Tabla busqueda(string nombreTabla, Criterio c);
 
     // @otras operaciones
@@ -52,12 +50,7 @@ private:
     vector<Tabla> _tablas;
     vector<pair<Criterio, int> > _criteriosUsados;
 
- /*   string _nombreTabla;
-    Tabla _t;
-    Registro _r;*/
-
-
- bool esCriterioValido(string &nombreTabla, Criterio &c);
+    bool esCriterioValido(string &nombreTabla, Criterio &c);
 
     bool mismosCampos(const int &indiceTabla, const Registro &r);
 
@@ -68,11 +61,10 @@ private:
     bool registroPasaFiltroCriterio(Registro &r, Criterio &c);
 
     void agregarACriteriosUsados(Criterio &c);
+
 };
 
 bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2);
-
 bool operator!=(const BaseDeDatos &b1, const BaseDeDatos &b2);
-
 
 #endif //TP1_BASEDEDATOS_H

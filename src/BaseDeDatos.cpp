@@ -4,23 +4,18 @@
 
 #include "BaseDeDatos.h"
 
-
 BaseDeDatos::BaseDeDatos(vector<string> nombresTabla, vector<Tabla> tablas) :
         _nombresTabla(nombresTabla), _tablas(tablas) {}
 
 void BaseDeDatos::agregarTabla(string nombre, Tabla t) {
-    if (pertenece(nombre, _nombresTabla)) {
-        // ver como implementar la restriccion
-    } else {
+    if (not pertenece(nombre, _nombresTabla)) {
         _nombresTabla.push_back(nombre);
         _tablas.push_back(t);
     }
 }
 
 void BaseDeDatos::agregarRegistroATabla(string nombreTabla, Registro r) {
-    if (!sePuedeInsertarRegistro(nombreTabla, r)) {
-        // ver como implementar la restriccion
-    } else {
+    if (sePuedeInsertarRegistro(nombreTabla, r)) {
         for (int i = 0; i < _nombresTabla.size(); i++) {
             if (nombreTabla == _nombresTabla[i]) {
                 _tablas[i].agregarRegistro(r);
@@ -43,11 +38,9 @@ bool BaseDeDatos::mismosCampos(const int &indiceTabla, const Registro &r) {
     return seteq(_tablas[indiceTabla].campos(), r.campos());
 }
 
-//chequear que para cada campo, el tipo de dato sea el mismo
+// chequear que para cada campo, el tipo de dato sea el mismo
 bool BaseDeDatos::mismosTiposEnCampos(const int &indiceTabla, const Registro &r) {
-
     for (int j = 0; j < _tablas[indiceTabla].campos().size(); j++) {
-
         if (_tablas[indiceTabla].tipoCampo(_tablas[indiceTabla].campos()[j]).esNat() !=
             r.dato(_tablas[indiceTabla].campos()[j]).esNat()) {
             return false;
@@ -73,16 +66,11 @@ bool BaseDeDatos::noHayDuplicadosEnClaves(const int &indiceTabla, const Registro
     return true;
 }
 
-
 bool BaseDeDatos::sePuedeInsertarRegistro(const string &nombreTabla, const Registro &r) {
-
-
     int indiceTabla = indiceDeNombreEnBase(nombreTabla);
-
     if (indiceTabla == _nombresTabla.size()) {
         return false;
     }
-
     return (mismosCampos(indiceTabla, r)) and mismosTiposEnCampos(indiceTabla, r) and
            noHayDuplicadosEnClaves(indiceTabla, r);
 }
@@ -96,9 +84,7 @@ vector<Tabla> BaseDeDatos::tablas() const {
 }
 
 bool BaseDeDatos::esCriterioValido(string &nombreTabla, Criterio &c) {
-
     int indiceTabla = indiceDeNombreEnBase(nombreTabla);
-
     for (int i = 0; i < c.restricciones().size(); i++) {
         for (int j = 0; j < _tablas[indiceTabla].campos().size(); j++) {
             bool perteneceCampo = false;
@@ -116,7 +102,6 @@ bool BaseDeDatos::esCriterioValido(string &nombreTabla, Criterio &c) {
     }
     return true;
 }
-
 
 void BaseDeDatos::agregarACriteriosUsados(Criterio &c) {
     bool criterioYaUsado = false;
@@ -150,18 +135,14 @@ bool BaseDeDatos::registroPasaFiltroCriterio(Registro &r, Criterio &crit) {
     return pasaFiltro;
 }
 
-
 Tabla BaseDeDatos::busqueda(string nombreTabla, Criterio c) {
     agregarACriteriosUsados(c);
     int indiceTabla = indiceDeNombreEnBase(nombreTabla);
     vector<Dato> tipoDeCampos;
-
     for (int i = 0; i < _tablas[indiceTabla].campos().size(); i++) {
         tipoDeCampos.push_back(_tablas[indiceTabla].tipoCampo(_tablas[indiceTabla].campos()[i]));
     }
-
     Tabla resultado(_tablas[indiceTabla].campos(), _tablas[indiceTabla].claves(), tipoDeCampos);
-
     for (int i = 0; i < _tablas[indiceTabla].registros().size(); i++) {
         if (registroPasaFiltroCriterio(_tablas[indiceTabla].registros()[i], c)) {
             resultado.agregarRegistro(_tablas[indiceTabla].registros()[i]);
@@ -179,10 +160,8 @@ Criterio BaseDeDatos::criterioMasUsado() {
             resultado = _criteriosUsados[i].first;
         }
     }
-
     return resultado;
 }
-
 
 bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2) {
     if (not seteq(b1.nombresTabla(), b2.nombresTabla())) {
@@ -199,4 +178,3 @@ bool operator==(const BaseDeDatos &b1, const BaseDeDatos &b2) {
 bool operator!=(const BaseDeDatos &b1, const BaseDeDatos &b2) {
     return not(b1 == b2);
 }
-//comento para probar commiteo en Clion

@@ -278,133 +278,133 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.cpp
 BaseDeDatos.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
 vector
 -
 Tabla.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
 utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 criterio.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
 utility
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.cpp
 Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 iostream
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 string
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.cpp
 iostream
 -
 Registro.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
 utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
 vector
 -
 iostream
 -
 Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.cpp
 Tabla.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
 utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
 string
 -
 Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 Registro.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.cpp
 criterio.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
 utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
 string
 -
 Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 restriccion.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
 vector
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.cpp
 vector
 -
 restriccion.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
 string
 -
 Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/baseDeDatos-test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/baseDeDatos-test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/BaseDeDatos.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/BaseDeDatos.h
 ../src/utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/criterio_test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/criterio_test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/criterio.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/criterio.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/dato_test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/dato_test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/registro_test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/registro_test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/Dato.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Dato.h
 ../src/Registro.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Registro.h
 vector
 -
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/restriccion_test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/restriccion_test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/restriccion.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/restriccion.h
 
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/tabla_test.cpp
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/tabla_test.cpp
 gtest/gtest.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/gtest/gtest.h
 ../src/Tabla.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/Tabla.h
 ../src/utils.h
-/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
+/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/src/utils.h
 

@@ -14,7 +14,7 @@ class Restriccion {
 
 public:
 
-
+    // @generador
     Restriccion(string campo, Dato valor, bool coincidencia);
 
     // @observador
@@ -26,7 +26,6 @@ public:
     // @observador
     bool coincidencia() const;
 
-
 private:
 
     string _campo;
@@ -35,17 +34,7 @@ private:
 
 };
 
-//Dato datoNat(int valorNat);
-//
-//Dato datoStr(string valorStr);
-//
-//bool operator==(const Dato&, const Dato&);
-//
-//bool operator!=(const Dato&, const Dato&);
-
 bool operator==(const Restriccion &res1, const Restriccion &res2);
-
 bool operator!=(const Restriccion &res1, const Restriccion &res2);
-
 
 #endif //TP1_RESTRICCION_H

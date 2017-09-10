@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=gnu++11 -ggdb3 -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/gonzalo/CLionProjects/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/google-test/include 
+CXX_INCLUDES = -I/home/gonzalo/CLionProjects/corrijoWinV2/BaseDeDatosTP1/Algo2TP1BaseDeDatos/tp1_base/tests/google-test/include 
 

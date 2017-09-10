@@ -8,7 +8,6 @@
 Restriccion::Restriccion(string campo, Dato valor, bool coincidencia) :
         _campo(campo), _valor(valor), _coincidencia(coincidencia) {};
 
-
 string Restriccion::campo() const {
     return _campo;
 }

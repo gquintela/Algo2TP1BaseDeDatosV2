@@ -4,7 +4,6 @@
 
 #include "gtest/gtest.h"
 #include "../src/BaseDeDatos.h"
-#include "../src/utils.h"
 
 using namespace std;
 
@@ -25,7 +24,6 @@ protected:
             b1({"tabla01"}, {t1}),
             b2({"tabla02"}, {t2}),
             b3({"tabla01", "tabla02"}, {t1, t2}) {};
-
 
     Registro r;
     Tabla t1;
@@ -89,5 +87,7 @@ TEST_F(BaseDeDatosTests, busqueda) {
     Tabla t4 = b3.busqueda("tabla01", c);
     t1.agregarRegistro(r0);
     EXPECT_EQ(t4, t1);
-
+    b3.agregarTabla("tabla03", t1);
+    b3.busqueda("tabla03", c);
+    EXPECT_EQ(b3.criterioMasUsado(), c);
 }
